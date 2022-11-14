@@ -12,7 +12,7 @@
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -50,9 +50,9 @@
     <div class="container-fluid">
 
       <!-- bg image -->
-        <div class="bgImageContainer">
-          <img src="Images/Beach.png" alt="" class="bg-image">
-        </div>
+      <div class="bgImageContainer">
+        <img src="Images/Beach.png" alt="" class="bg-image">
+      </div>
 
       <!-- hotel name -->
       <div class="nameContainer">
@@ -65,9 +65,69 @@
         <h2 class="bookNowH2">BOOK TODAY</h2>
       </button>
     </div>
-
   </section>
 
+  <!-- offer section -->
+  <section id="offer">
+    <div class="container-fluid contentContainer offerContainer">
+      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 offerRow">
+        <div class="col offerCol">
+          <div class="offerContent">
+            <img src="Images/Fishing.png" alt="" class="offerImg">
+            <h3>Great Fishing Place</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dictum leo nibh, nec efficitur orci mattis nec.</p>
+          </div>
+        </div>
+        <div class="col offerCol">
+          <div class="offerContent">
+            <img src="Images/Drinks.png" alt="" class="offerImg">
+            <h3>Open Bar</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dictum leo nibh, nec efficitur orci mattis nec.</p>
+          </div>
+        </div>
+        <div class="col offerCol">
+          <div class="offerContent">
+            <img src="Images/Bedroom.png" alt="" class="offerImg">
+            <h3>Cozy Bedrooms</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dictum leo nibh, nec efficitur orci mattis nec.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="coloredSection">
+    <div class="container-fluid contentContainer testimonialsContainer">
+      <h3 class="testimonialText">See what others say</h3>
+      <div id="arrows" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Images/Testimonials/test1.png" class="testimonialImg" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Images/Testimonials/test2.png" class="testimonialImg" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Images/Testimonials/test3.png" class="testimonialImg" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Images/Testimonials/test4.png" class="testimonialImg" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Images/Testimonials/test5.png" class="testimonialImg" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#arrows" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#arrows" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>

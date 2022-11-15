@@ -283,6 +283,17 @@ p{
     font-size: 5vh;
   }
 
+  .bookNowContainer{
+    width: 60vw;
+    height: 10vh;
+  }
+
+  .bookNowH2{
+    font-weight: 700;
+    padding-top: 1vh;
+    font-size: 3vh;
+  }
+
   h2{
     font-size: 3vh;
   }

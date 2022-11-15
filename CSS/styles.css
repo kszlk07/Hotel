@@ -294,6 +294,10 @@ p{
     font-size: 3vh;
   }
 
+  .pricingContainer{
+    padding: 1.5rem 12vw;
+  }
+
   h2{
     font-size: 3vh;
   }

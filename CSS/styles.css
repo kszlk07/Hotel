@@ -32,7 +32,11 @@ p{
 }
 
 .contentContainer{
-  padding: 4rem 0 4rem 0rem;
+  padding: 4rem 0 4rem 0;
+}
+
+.container{
+  margin: 5rem auto;
 }
 
 /* Navbar */
@@ -57,6 +61,7 @@ p{
 }
 
 /* Title section */
+
 .name{
   font-family: 'Cormorant Garamond', serif;
   font-size: 5rem;
@@ -73,8 +78,9 @@ p{
   height: 60rem;
   margin-left: 50%;
   transform: translateX(-50%);
-
 }
+
+/* Dodaj mediaquery kiedy ekran sie zmniejsza to wysokosc obrazu tez */
 
 .nameContainer{
   position: absolute;
@@ -118,7 +124,7 @@ p{
 }
 
 .offerRow{
-  margin: 3rem 0;
+  margin: 3rem auto;
   padding: 0 10%;
   /* dodaj mediaquery zeby od 1200px szerokosci  padding sie zmniejszal oraz zeby 3 kolumna na tablecie sie centrowala */
 }
@@ -147,6 +153,84 @@ p{
   color: #fff;
 }
 
+/* pricing section */
+
+.pricingH3{
+  font-size: 2.2rem;
+  padding-bottom: 2rem;
+}
+
+.priceCardPremium{
+  height: 35rem;
+}
+
+.priceCardBasic{
+  height: 30rem;
+}
+
+.price{
+  font-weight: 700;
+  color: #333d41;
+}
+
+.euro{
+  font-size: 1.5rem;
+}
+
+.smallDiscount{
+  font-weight: 700;
+  color: #333d41;
+}
+
+.bigDiscount{
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #a7c5d4;
+}
+
+/* stay section */
+.stayContainer{
+  position: absolute;
+  left:50%;
+  transform: translate(-5%,-180%);
+  border: solid 10px;
+  border-color: #b9dbeb;
+  width: 42rem;
+  height: 28rem;
+  color: white;
+}
+
+.stayContainerBg{
+  text-align: right;
+  padding-right: 2rem;
+  position: absolute;
+  background-color: #45657725;
+  width: 100%;
+  height: 100%;
+}
+
+.stayH4{
+  font-weight: 700;
+}
+
+/* foooter section */
+.footer{
+  background-color: #b9dbeb;
+  padding: 2rem 2rem 2rem 2rem;
+  color: #333d41;
+}
+
+/* dodaj mediaquery żeby to sie centrowalo od tabletowej wielkosci */
+
+.footerColContent{
+  padding-top: 2rem;
+  text-align: left;
+}
+
+.footerH5{
+  font-weight: 700;
+}
+
 /* Bootstrap edits */
 
 .btn-outline-primary {
@@ -160,9 +244,20 @@ p{
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #333d41;
   --bs-btn-active-border-color: #333d41;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #0d6efd;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #0d6efd;
-  --bs-gradient: none;
 }
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #a7c5d4;
+  --bs-btn-border-radius: 0;
+  --bs-btn-border-color: #a7c5d4;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #333d41;
+  --bs-btn-hover-border-color: #333d41;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #475054;
+  --bs-btn-active-border-color: #475054;
+}
+/* Notatki:
+Użyj paddingu wewnątrz html przy pomocy bootstrapa */

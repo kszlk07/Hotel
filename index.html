@@ -22,6 +22,9 @@
   <!-- Bootstrap script -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
+  <!-- Font Awesome (icons) -->
+  <script src="https://kit.fontawesome.com/ae2a15dbf4.js" crossorigin="anonymous"></script>
+
   <!-- Navbar Section -->
   <section class="coloredSection" id="navbar">
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -33,13 +36,13 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#title">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Offer</a>
+              <a class="nav-link" href="#offer">Offer</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#pricing">Pricing</a>
             </li>
           </ul>
         </div>
@@ -49,7 +52,7 @@
 
   <!-- title section -->
   <section id="title">
-    <div class="container-fluid">
+    <div class="container-fluid titleContainer">
 
       <!-- bg image -->
       <div class="bgImageContainer">
@@ -63,16 +66,19 @@
           <h2>Let the time pass</h2>
         </div>
       </div>
-      <button type="button" class="btn btn-outline-primary bookNowContainer">
-        <h2 class="bookNowH2">BOOK TODAY</h2>
-      </button>
+      <a href="#pricing">
+        <button type="button" class="btn btn-outline-primary bookNowContainer" href="#pricing">
+          <h2 class="bookNowH2">BOOK TODAY</h2>
+        </button>
+      </a>
+
     </div>
   </section>
 
   <!-- offer section -->
   <section id="offer">
     <div class="container-fluid contentContainer offerContainer">
-      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 offerRow">
+      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 justify-content-center offerRow">
         <div class="col offerCol">
           <div class="offerContent">
             <img src="Images/Fishing.png" alt="" class="offerImg">
@@ -98,6 +104,7 @@
     </div>
   </section>
 
+  <!-- testimonials section -->
   <section id="testimonials" class="coloredSection">
     <div class="container-fluid contentContainer testimonialsContainer">
       <h3 class="testimonialText">See what others say</h3>
@@ -130,6 +137,220 @@
       </div>
     </div>
   </section>
+
+  <!-- pricing section -->
+  <section id="pricing">
+    <div class="container">
+      <h3 class="col-lg-4 col-md-6 col-sm-10 m-auto pricingH3">Two-person premium offer</h2>
+        <div class="row">
+
+          <!--premium Card #1, 1 day -->
+          <div class="col-lg-4 col-md-6 col-sm-10 pb-4 d-block m-auto shadow-lg priceCardPremium">
+            <div class="pricing-item">
+              <div class="pt-4 pb-3">
+                <h3>1 Day</h3>
+              </div>
+              <div class="pricing-price pb-1">
+                <h1 class="price">
+                  <span class="euro">€</span>300
+                </h1>
+              </div>
+              <div class="pricing-description">
+                <p>Free Buffet</p>
+                <p>Pool Acces</p>
+                <p>1 Bedroom</p>
+                <p>2 Beds</p>
+                <p>1 Bathroom</p>
+              </div>
+              <div class="pricing-button pb-4">
+                <button type="button" class="btn btn-lg btn-outline-primary w-75">Buy now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- premium Card #2, 1 week -->
+          <div class="col-lg-4 col-md-6 col-sm-10 pb-4 d-block m-auto shadow-lg priceCardPremium">
+            <div class="pricing-item">
+              <div class="pt-4 pb-3" style="letter-spacing: 2px">
+                <h3>1 Week</h3>
+              </div>
+              <div class="pricing-price pb-1">
+                <h1 class="price">
+                  <span class="euro">€</span>1800
+                </h1>
+              </div>
+              <div class="pricing-description">
+                <p>Free Buffet</p>
+                <p>Pool Acces</p>
+                <p>1 Bedroom</p>
+                <p>2 Beds</p>
+                <p>1 Bathroom</p>
+              </div>
+              <div class="pricing-button pb-4">
+                <button type="button" class="btn btn-lg btn-primary w-75">Buy now</button>
+              </div>
+              <h4 class="smallDiscount">Save 10% !!!</h4>
+            </div>
+          </div>
+
+          <!-- premium Card #3, 1 month -->
+          <div class="col-lg-4 col-md-10 col-sm-10 pb-4 d-block m-auto shadow-lg priceCardPremium">
+            <div class="pricing-item">
+              <div class="pt-4 pb-3" style="letter-spacing: 2px">
+                <h3>1 Month</h3>
+              </div>
+              <div class="pricing-price pb-1">
+                <h1 class="price">
+                  <span class="euro">€</span>7200
+                </h1>
+              </div>
+              <div class="pricing-description">
+                <p>Free Buffet</p>
+                <p>Pool Acces</p>
+                <p>1 Bedroom</p>
+                <p>2 Beds</p>
+                <p>1 Bathroom</p>
+              </div>
+              <div class="pricing-button pb-4">
+                <button type="button" class="btn btn-lg btn-primary w-75">Buy now</button>
+              </div>
+              <h4 class="bigDiscount">Save 20% !!!</h4>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="container">
+      <h3 class="col-lg-4 col-md-6 col-sm-10 m-auto pricingH3">Two-person basic offer</h2>
+        <div class="row">
+
+          <!-- basic Card #1, 1 day -->
+          <div class="col-lg-4 col-md-6 col-sm-10 pb-4 d-block m-auto shadow priceCardBasic">
+            <div class="pricing-item">
+              <div class="pt-4 pb-3">
+                <h3>1 Day</h3>
+              </div>
+              <div class="pricing-price pb-1">
+                <h1 class="price">
+                  <span class="euro">€</span>100
+                </h1>
+              </div>
+              <div class="pricing-description">
+                <p>1 Bedroom</p>
+                <p>2 Beds</p>
+                <p>1 Bathroom</p>
+              </div>
+              <div class="pricing-button pb-4">
+                <button type="button" class="btn btn-lg btn-outline-primary w-75">Buy now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- basic Card #2, 1 week -->
+          <div class="col-lg-4 col-md-6 col-sm-10 pb-4 d-block m-auto shadow priceCardBasic">
+            <div class="pricing-item">
+              <div class="pt-4 pb-3" style="letter-spacing: 2px">
+                <h3>1 Week</h3>
+              </div>
+              <div class="pricing-price pb-1">
+                <h1 class="price">
+                  <span class="euro">€</span>600
+                </h1>
+              </div>
+              <div class="pricing-description">
+                <p>1 Bedroom</p>
+                <p>2 Beds</p>
+                <p>1 Bathroom</p>
+              </div>
+              <div class="pricing-button pb-4">
+                <button type="button" class="btn btn-lg btn-primary w-75">Buy now</button>
+              </div>
+              <h4 class="smallDiscount">Save 10% !!!</h4>
+            </div>
+          </div>
+
+          <!-- basic Card #3, 1 month -->
+          <div class="col-lg-4 col-md-10 col-sm-10 pb-4 d-block m-auto shadow priceCardBasic">
+            <div class="pricing-item">
+              <div class="pt-4 pb-3" style="letter-spacing: 2px">
+                <h3>1 Month</h3>
+              </div>
+              <div class="pricing-price pb-1">
+                <h1 class="price">
+                  <span class="euro">€</span>2700
+                </h1>
+              </div>
+              <div class="pricing-description">
+                <p>1 Bedroom</p>
+                <p>2 Beds</p>
+                <p>1 Bathroom</p>
+              </div>
+              <div class="pricing-button pb-4">
+                <button type="button" class="btn btn-lg btn-primary w-75">Buy now</button>
+              </div>
+              <h4 class="bigDiscount">Save 20% !!!</h4>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+  <!-- stay section -->
+  <section id="stay">
+    <div class="container-fluid">
+      <div class="bgImageContainer">
+        <img src="Images/Sunset.png" alt="" class="bg-image">
+      </div>
+      <div class="stayContainer">
+        <div class="stayContainerBg">
+          <h1 class="name">BOOK TODAY</h1>
+          <h4 class="stayH4">Mailing Address</h4>
+          <p>Midtwon, Safety st.45</p>
+          <br>
+          <h4 class="stayH4">Email Address</h4>
+          <p>Safe@hotel.com</p>
+          <br>
+          <h4 class="stayH4">Phone Number</h4>
+          <p>(123) 456 888</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer">
+    <div class="container-fluid">
+      <div class="row row-cols-md-1 row-cols-lg-3 justify-content-center">
+        <div class="col footerCol">
+          <div class="footerColContent">
+            <h5 class="footerH5">A Hotel</h5>
+            <p class="footerP">Midtown, Safety st.45<br>
+            we're waiting for you!</p>
+          </div>
+
+        </div>
+        <div class="col footerCol">
+          <div class="footerColContent">
+            <h5 class="footerH5">Check Our Media</h5>
+            <p class="footerP"><i class="fa-brands fa-facebook"></i>  Facebook <br>
+              <i class="fa-brands fa-instagram"></i>  Instagram <br>
+              <i class="fa-brands fa-youtube"></i>  Youtube <br>
+              <i class="fa-brands fa-twitter"></i>  Twitter
+            </p>
+          </div>
+
+        </div>
+        <div class="col footerCol ">
+          <div class="footerColContent">
+            <h5 class="footerH5">Questions</h5>
+            <p class="footerP">(123) 456 888 <br>
+            Safe@hotel.com
+          </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
 </body>
 
 </html>

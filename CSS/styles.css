@@ -252,10 +252,18 @@ p{
 }
 
 @media (max-width:900px){
+  .nameContainer{
+    width: 90%;
+    transform: translate(-50%,-350%);
+  }
   .stayContainer{
-    width: 30rem;
+    width: 90%;
     height: 32rem;
     transform: translate(-50%,-130%);
+  }
+
+  .name{
+    font-size: 4.5rem;
   }
 }
 

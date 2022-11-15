@@ -279,6 +279,11 @@ p{
     transform: translate(-50%,-130%);
   }
 
+  .stayContainerBg{
+    padding-right: 0;
+    text-align: center;
+  }
+
   .name{
     font-size: 5vh;
   }
@@ -296,6 +301,10 @@ p{
 
   .pricingContainer{
     padding: 1.5rem 12vw;
+  }
+
+  .testimonialsContainer{
+    padding: 1rem 0 1rem 0;
   }
 
   h2{
